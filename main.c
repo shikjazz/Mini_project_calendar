@@ -3,19 +3,12 @@
 
 int main()
 {
-    int n,r,sum=0,temp;
-    printf("enter the number=");
-    scanf("%d",&n);
-    temp=n;
-    while(n>0)
-   {
-    r=n%10;
-    sum=(sum*10)+r;
-    n=n/10;
- }
-    if(temp==sum)
-    printf("palindrome number ");
-    else
-    printf("not palindrome");
-    return 0;
+    int i,fact=1,number;
+    printf("Enter a number: ");
+    scanf("%d",&number);
+    for(i=1;i<=number;i++){
+    fact=fact*i;
+  }
+     printf("Factorial of %d is: %d",number,fact);
+     return 0;
 }
